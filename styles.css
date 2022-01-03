@@ -1,0 +1,119 @@
+/* body {
+    min-height: 100%;
+    background:url(images/bg-desktop.svg) hsl(257, 40%, 49%);
+    background-size: cover;
+} */
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+button {
+   width: 210px; 
+   height: 55px;
+   border-radius: 30px;
+   border: none;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1.15rem;
+   color:hsl(257, 40%, 49%); 
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
+   margin-top: 15px;
+}
+
+main {
+    padding: 25px 0 15px;
+    margin: 30px 0 0;
+}
+
+nav {
+    padding: 20px 0 20px;
+    margin: 15px 0 15px;
+}
+
+.main-content {
+    margin-top: 3em;
+}
+
+.icon-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    padding: 5px 8px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+}
+
+.icon a {
+    color: white;
+}
+
+.icon a:hover {
+    color:hsl(300, 69%, 71%);
+    transition: color 1s;
+}
+
+.icon:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+    transition: border 1s;
+}
+
+button:hover {
+    color: #fff;
+    background-color:hsl(300, 69%, 71%);
+    transition: all 1s;
+}
+
+/* Media */
+
+@media (min-width: 900px) {
+    body {
+        min-height: 100%;
+        background:url(images/bg-desktop.svg) hsl(257, 40%, 49%);
+        background-size: cover;
+    }
+}
+
+@media (max-width: 899px) {
+    body {
+        background:url(images/bg-mobile.svg) hsl(257, 40%, 49%);
+        background-size: cover;
+        min-height: 100%;
+    }
+    .left-container {
+        display: flex;
+        justify-content: center;
+        padding: 0 10%;
+    }
+    .main-content {
+        text-align: center;
+        padding: 0 10%;
+    }
+    button {
+        width: 225px;
+        height: 40px;
+        font-size: 0.85em;
+    }
+    .icon-group {
+        display: flex;
+        justify-content: center;
+        padding: 10%;
+    }
+}
